@@ -8,10 +8,10 @@ It's time to start writing some express!!!
 
 - Create a basic express server in the `bird-app` directory
     - You should have files `server.js`, `package.json`, and probably `package-lock.json`
-- The endpoint `/birds` sends back the list of all birds
+- The endpoint `/api/birds` sends back the list of all birds in JSON format
    - You can import this from `/db/birds.js`
-- The endpoint `/birds/1` sends back the bird with `id: 1` & so on for each bird ID
-- The endpoint `/birds/location/nyc` sends back all the birds from NYC, & so on for the other locations
+- The endpoint `/api/birds/1` sends back the bird in JSON format with `id: 1` & so on for each bird ID
+- The endpoint `/api/birds/location/nyc` sends back all the birds from NYC in JSON format, & so on for the other locations
 
 ### Remember:
 - Use the project we worked on today as your reference for building out this birds project! But DO NOT copy and paste code! If you copy and paste you won't learn effectively. And we're all here to learn ✏️🎒
