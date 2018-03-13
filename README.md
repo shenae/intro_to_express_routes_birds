@@ -10,14 +10,14 @@ It's time to start writing some express!!!
     - You should have files `server.js`, `package.json`, and probably `package-lock.json`
 - The endpoint `/birds` sends back the list of all birds
    - You can import this from `/db/birds.js`
-- The endpoint `/birds/1` sends back the bird with `id: 1`, & so on for each bird ID
+- The endpoint `/birds/1` sends back the bird with `id: 1` & so on for each bird ID
 - The endpoint `/birds/location/nyc` sends back all the birds from NYC, & so on for the other locations
 
 ### Bonus:
 - Create a views folder, then create a home folder. The home `index.ejs` should display through endpoint `/` with whatever your homepage will be
-- Create an additional `index.ejs` that displays the results for the endpoint `/birds`
+- Create a birds folder with an `index.ejs` that displays the results for the endpoint `/birds`
 - Create an additional view for `/birds/:id`
-[Fell free to reference the ejs docs](http://ejs.co/)
+- [Fell free to reference the ejs docs](http://ejs.co/)
 
 ## 🚀 Completion looks like:
 
