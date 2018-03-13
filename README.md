@@ -13,6 +13,9 @@ It's time to start writing some express!!!
 - The endpoint `/birds/1` sends back the bird with `id: 1`, & so on for each bird ID
 - The endpoint `/birds/location/nyc` sends back all the birds from NYC, & so on for the other locations
 
+### Remember:
+- Use the project we worked on today as your reference for building out this birds project! But DO NOT copy and paste code! If you copy and paste you won't learn effectively. And we're all here to learn ✏️🎒
+
 ### Bonus:
 - Create a views folder, then create a home folder. The home `index.ejs` should display through endpoint `/` with whatever your homepage will be
 - Create an additional `index.ejs` that displays the results for the endpoint `/birds`
