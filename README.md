@@ -4,12 +4,16 @@
 
 ## Instructions:
 
-- Create a basic express server in the `bird-app` directory
-    - You should have files `server.js`, `package.json`, and probably `package-lock.json`
-- The endpoint `/birds` sends back the list of all birds in JSON format
-   - You can import this from `/db/birds.js`
-- The endpoint `/birds/1` sends back the bird in JSON format with `id: 1` & so on for each bird ID
-- The endpoint `/birds/location/nyc` sends back all the birds from NYC in JSON format, & so on for the other locations
+1. Create an Express server in the `server.js` file
+1. Create a route handler for `GET /birds.json` that responds with a JSON representation of all birds in our application. A few hints here:
+   - The information about birds exists in the file `db/birds.js` which you can access within your `server.js` file with require
+   - Use [`response.json()`](https://expressjs.com/en/4x/api.html#res.json) to send a JSON formatted response
+1. Create a route handler for `GET /birds/:id.json`, where `:id` can be any number like `/birds/1.json`
+   - This will require you to learn about [Express route parameters](https://expressjs.com/en/guide/routing.html#route-parameters)
+   
+## Bonus:
+- Create a `GET /` route that responds with HTML listing out the name for each bird.
+- Create a `GET /cities/:name.json` route that responds with the birds in that city, e.g. `/cities/NYC.json`
 
 ## Remember:
 
@@ -25,6 +29,5 @@
 ## 🚀 Your homework submission should include:
 
 - A pull request created on _this repo_ (after you fork).
-- A good commit history
 
 ### This homework is due 🚨 11PM TONIGHT 🚨
