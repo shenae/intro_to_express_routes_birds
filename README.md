@@ -2,7 +2,7 @@
 
 ![birds](https://media3.giphy.com/media/3o7Zen0xHZFjAFiQ1O/giphy.gif)
 
-## Let's Get Started!
+## Instructions:
 
 - Create a basic express server in the `bird-app` directory
     - You should have files `server.js`, `package.json`, and probably `package-lock.json`
@@ -11,7 +11,8 @@
 - The endpoint `/birds/1` sends back the bird in JSON format with `id: 1` & so on for each bird ID
 - The endpoint `/birds/location/nyc` sends back all the birds from NYC in JSON format, & so on for the other locations
 
-### Remember:
+## Remember:
+
 - Use the in-class project we worked on Monday as your reference for building out this birds project! But DO NOT copy and paste code! If you copy and paste you won't learn effectively. And we're all here to learn ✏️🎒
 - We've created this [cheat sheet](https://git.generalassemb.ly/wdi-nyc-arcadia/arcadia-class-info/wiki/Express-Cheat-Sheet) to help guide you in this process
 
