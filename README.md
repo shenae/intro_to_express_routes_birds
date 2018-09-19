@@ -13,7 +13,7 @@
 
 ### Remember:
 - Use the in-class project we worked on Monday as your reference for building out this birds project! But DO NOT copy and paste code! If you copy and paste you won't learn effectively. And we're all here to learn ✏️🎒
-- We've created this [cheat sheet](https://git.generalassemb.ly/wdi-nyc-arcadia/arcadia-class-info/wiki/Express-Cheat-Sheet)
+- We've created this [cheat sheet](https://git.generalassemb.ly/wdi-nyc-arcadia/arcadia-class-info/wiki/Express-Cheat-Sheet) to help guide you in this process
 
 ## 🚀 Completion looks like:
 
