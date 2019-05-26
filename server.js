@@ -1,43 +1,26 @@
 const express = require('express');
 const app = express();
-const Birds = require('./bird-app/db/birds.js');
+const birds = require('./bird-app/db/birds.js');
 const PORT = 3000;
 
-//app.use(express.static('public'));
 
-// const Birds = await db.bulkCreate(db);
-
-app.get('/birds', async (request, response) => {
+//to get all the birds
+app.get('/birds.json', async (request, response) => {
     try {
-    //const { Birds } = require('./bird-app/db/birds.js'); 
-    //const allBirds = await Birds.findAll();
-      response.json(Birds);
+      response.json(birds);
     } catch(error) {
       console.log(`Something bad happened: ${error}`);
     }
   });
 
-//to get bird names
-app.get('/birdnames/:id', async (request, response) => {
+//to get bird id
+app.get('/birds/:id.json', async (request, response) => {
   try {
-    //const { birds } = require('./bird-app/db/birds.js');
-const birdNames = await Birds.findAll(request.params.id);
-    response.json(birdNames);
+let id = request.params.id - 1;
+    response.json(birds[id]);
   } catch(error) {
-    console.log(`Something bad happened: ${error}`);
+    console.log(`Something bad is happening when finding bird names: ${error}`);
    }
-});
-
-app.get('/bird/parrot', async (request, response) => {
-    try {
-      const parrot = await Birds.findAll
-      ({where: {
-        type: 'parrot'}
-});
-    response.json(parrot);
-  } catch(error) {
-    console.log(`Something bad is happening: ${error}`);
-  }
 });
 
 app.get('/', async(request, response) => {
@@ -46,6 +29,16 @@ app.get('/', async(request, response) => {
     } catch(error) {
         console.log(`Something bad happened: ${error}`);
     } 
+});
+
+//bonus attempt
+app.get('/birds/:type.json', async (request, response) => {
+  try {
+  let type = request.params.type;
+  response.json(birds[type]);
+} catch(error) {
+  console.log(`Something bad is happening when finding bird type: ${error}`);
+}
 });
 
 app.listen(PORT, () => {
